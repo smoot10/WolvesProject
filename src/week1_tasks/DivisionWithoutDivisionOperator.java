@@ -1,8 +1,7 @@
 package week1_tasks;
 
-public class DivisionWithOutOperator {
 
-
+    public class DivisionWithoutDivisionOperator {
 
         public static int divide(int dividend, int divisor) {
             // Check for division by zero
@@ -42,7 +41,6 @@ public class DivisionWithOutOperator {
             System.out.println("Result: " + result);
         }
     }
-
 
 
 
