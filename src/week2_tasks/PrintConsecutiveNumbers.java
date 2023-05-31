@@ -5,22 +5,39 @@ that,given a positive integer N,prints the consecutive numbers from 1 to N,each 
 For example,here is the output for N=24:
 
  */
+//using solution from Google
 
 public class PrintConsecutiveNumbers {
-
+    public static void printNumbers(int N) {
+        for (int i = 1; i <= N; i++) {
+            String output = "";
+            if (i % 2 == 0) {
+                output += "Codility";
+            }
+            if (i % 3 == 0) {
+                output += "Test";
+            }
+            if (i % 5 == 0) {
+                output += "Coders";
+            }
+            if (output.isEmpty()) {
+                output = Integer.toString(i);
+            }
+            System.out.println(output);
+        }
+    }
 
     public static void main(String[] args) {
-        printConsecutiveNumbers(24);
-
-
-
-
-
+        int N = 24;
+        printNumbers(N);
     }
-
-    private static void printConsecutiveNumbers(int i) {
-
-    }
-
 
 }
+
+
+
+
+
+
+
+
